@@ -1,10 +1,11 @@
 # Disjoint-Test-Union
 ## Description
 Mahir lives in Gridland. Gridland consists of N rows and M columns where every point has a height. To go from one cell to it’s adjacent ones Mahir needs a ladder which is at least as long as the height difference. For example to go from a cell which has height X to a cell which has height Y Mahir needs a ladder at least |X-Y| units long. Mahir is curious, he wants to know the the shortest ladder which allows him to go from one given cell, X, to the other, Y.
-
+```bash
 3 2
-
 4 5
+```
+
 
 From (1, 2) to (2, 2) via (1, 1) and (2, 1), 1 unit length of ladder is sufficient. 
 
@@ -23,58 +24,44 @@ Then, the next Q lines will have 4 integers indicating two cells of a query.
 Print the answer for the each query, minimum length of the ladder that Mahir can travel from a cell to the other one, in a new line.
 ## Examples 
 **1.Sample Input**
-
+```
 5 5
-
 1 2 3 4 5
-
 100 100 23 100 100 
-
 100 100 43 100 100
-
 100 100 63 100 100 
-
 100 100 83 100 100
-
 1
-
 1 1 5 3
+```
 
 **Sample Output**
-
+```
 20
-
+```
 **Explanation**
 
 (1,1) → (1,2) → (1,3) → (2,3) → (3,3) → (4,3) → (5,3)
 2
 
 **2.Sample Input**
-
+```
 5 5
-
 1 2 3 4 5
-
-
 100 100 23 100 100 
-
 100 100 43 100 100
-
 100 100 63 100 100 
-
 100 100 83 100 100
-
 2
-
 4 2 4 4
-
 1 1 1 5
+```
 
 **Sample Output**
-
+```
 17 
-
 1
+```
 
 **Explanation**
 - First query,(4,2) → (5,2) → (5,3) → (5,4) → (4,4)
